@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="Linux,Nginx,服务器安装,">
 
 
 
@@ -88,13 +88,23 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="星龙断月的博客">
-<meta property="og:url" content="http://yoursite.com/archives/2019/02/index.html">
+<meta name="description" content="Nginx服务器1.阿里云添加80端口阿里云上默认只有一个22端口用来做远程登录，如果希望在阿里云上安装支持http请求的nginx服务器，需要给阿里云添加80端口  2. 安装nginxa) 添加nginx存储库   1yum install epel-release b) 安装nginx 1yum install nginx c) 运行nginxNginx不会自行启动。要运行Nginx   1">
+<meta name="keywords" content="Linux,Nginx,服务器安装">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Nginx服务器安装">
+<meta property="og:url" content="http://yoursite.com/2019/2/23/Nginx服务器安装/index.html">
 <meta property="og:site_name" content="星龙断月的博客">
+<meta property="og:description" content="Nginx服务器1.阿里云添加80端口阿里云上默认只有一个22端口用来做远程登录，如果希望在阿里云上安装支持http请求的nginx服务器，需要给阿里云添加80端口  2. 安装nginxa) 添加nginx存储库   1yum install epel-release b) 安装nginx 1yum install nginx c) 运行nginxNginx不会自行启动。要运行Nginx   1">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://img2.ph.126.net/jzQlz9J-ndh9xXhO-3z71w==/1811572950210331610.png">
+<meta property="og:image" content="http://img2.ph.126.net/JNSNSZ1QyoX6XKatM_Owtg==/3041055648482420300.png">
+<meta property="og:image" content="http://img1.ph.126.net/gVHVko9xCqDRh5x3htTxbg==/804455483539663219.png">
+<meta property="og:image" content="http://img1.ph.126.net/sln-qRD82nc1rDyS1OMsKA==/1262978220601236940.png">
+<meta property="og:updated_time" content="2019-02-23T08:26:16.494Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="星龙断月的博客">
+<meta name="twitter:title" content="Nginx服务器安装">
+<meta name="twitter:description" content="Nginx服务器1.阿里云添加80端口阿里云上默认只有一个22端口用来做远程登录，如果希望在阿里云上安装支持http请求的nginx服务器，需要给阿里云添加80端口  2. 安装nginxa) 添加nginx存储库   1yum install epel-release b) 安装nginx 1yum install nginx c) 运行nginxNginx不会自行启动。要运行Nginx   1">
+<meta name="twitter:image" content="http://img2.ph.126.net/jzQlz9J-ndh9xXhO-3z71w==/1811572950210331610.png">
 
 
 
@@ -124,13 +134,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/2019/02/">
+  <link rel="canonical" href="http://yoursite.com/2019/2/23/Nginx服务器安装/">
 
 
 
 
 
-  <title>归档 | 星龙断月的博客</title>
+  <title>Nginx服务器安装 | 星龙断月的博客</title>
   
 
 
@@ -149,7 +159,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
     <a href="https://github.com/dargon-moon/dargon-moon.github.io" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#FD6C6C; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 
@@ -286,212 +296,290 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/2/23/Nginx服务器安装/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="星龙断月">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="http://img0.imgtn.bdimg.com/it/u=3803779600,3510694404&fm=11&gp=0.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="星龙断月的博客">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">Nginx服务器安装</h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-23T16:21:02+08:00">
+                2019-02-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-        嗯..! 目前共计 5 篇日志。 继续努力。
-      </span>
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux</span>
+                  </a>
+                </span>
 
-      
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/Nginx/" itemprop="url" rel="index">
+                    <span itemprop="name">Nginx</span>
+                  </a>
+                </span>
 
-        
-        
-        
-
-        
+                
+                
+              
+            </span>
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2019">2019</h1>
-          </div>
-        
-        
 
-        
+          
+            
+          
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
+          
+             <span id="/2019/2/23/Nginx服务器安装/" class="leancloud_visitors" data-flag-title="Nginx服务器安装">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">热度&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             	 <span>℃</span>
+          
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/2/23/vim编辑器/" itemprop="url">
+          
+
+          
+            <div class="post-wordcount">
               
-                <span itemprop="name">vim编辑器</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  486
+                </span>
               
-            </a>
-        
-      </h2>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-02-23T16:51:34+08:00" content="2019-02-23">
-          02-23
-        </time>
-      </div>
+              
+                <span class="post-meta-divider">|</span>
+              
 
-    </header>
-  </article>
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 :</span>
+                
+                <span title="阅读时长">
+                  2
+                </span>
+              
+            </div>
+          
 
+          
 
+        </span></div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/2/23/Nginx服务器安装/" itemprop="url">
-              
-                <span itemprop="name">Nginx服务器安装</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-02-23T16:21:02+08:00" content="2019-02-23">
-          02-23
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/2/23/MySQL安装和配置/" itemprop="url">
-              
-                <span itemprop="name">MySQL安装和配置</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-02-23T15:24:19+08:00" content="2019-02-23">
-          02-23
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+      
+        <h1 id="Nginx服务器"><a href="#Nginx服务器" class="headerlink" title="Nginx服务器"></a>Nginx服务器</h1><h3 id="1-阿里云添加80端口"><a href="#1-阿里云添加80端口" class="headerlink" title="1.阿里云添加80端口"></a>1.阿里云添加80端口</h3><p>阿里云上默认只有一个22端口用来做远程登录，如果希望在阿里云上安装支持http请求的nginx服务器，需要给阿里云添加80端口</p>
+<p><img src="http://img2.ph.126.net/jzQlz9J-ndh9xXhO-3z71w==/1811572950210331610.png" alt="打开安全组设置"><br><img src="http://img2.ph.126.net/JNSNSZ1QyoX6XKatM_Owtg==/3041055648482420300.png" alt><br><img src="http://img1.ph.126.net/gVHVko9xCqDRh5x3htTxbg==/804455483539663219.png" alt><br><img src="http://img1.ph.126.net/sln-qRD82nc1rDyS1OMsKA==/1262978220601236940.png" alt></p>
+<h3 id="2-安装nginx"><a href="#2-安装nginx" class="headerlink" title="2. 安装nginx"></a>2. 安装nginx</h3><p>a) 添加nginx存储库  </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install epel-release</span><br></pre></td></tr></table></figure>
+<p>b) 安装nginx</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install nginx</span><br></pre></td></tr></table></figure>
+<p>c) 运行nginx<br>Nginx不会自行启动。要运行Nginx  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start nginx</span><br></pre></td></tr></table></figure>
+<p>nginx的运行命令:  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">systemctl status nginx 查看nginx的状态  </span><br><span class="line">systemctl start/stop/enable/disable nginx 启动/关闭/设置开机启动/禁止开机启动</span><br></pre></td></tr></table></figure>
+<p>d) 系统启动时启动Nginx  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl enable nginx</span><br></pre></td></tr></table></figure>
+<p>e）如果您正在运行防火墙，请运行以下命令以允许HTTP和HTTPS通信：   </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sudo firewall-cmd --permanent --zone=public --add-service=http </span><br><span class="line"></span><br><span class="line">sudo firewall-cmd --permanent --zone=public --add-service=https</span><br><span class="line"></span><br><span class="line">sudo firewall-cmd --reload</span><br></pre></td></tr></table></figure>
+<h3 id="3-nginx目录共享配置"><a href="#3-nginx目录共享配置" class="headerlink" title="3.nginx目录共享配置"></a>3.nginx目录共享配置</h3><p>a) 在contOS目录中确定一个需要共享的文件夹，例如： /home/yuting<br>b) 打开 etc/nginx/nginx.conf 文件，设置server</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#共享设置 - 在浏览器中输入服务器ip地址，会展示共享目录的文件列表</span><br><span class="line">root /home/yuting;</span><br><span class="line">location / &#123;</span><br><span class="line">       autoindex on;</span><br><span class="line">       autoindex_exact_size on;</span><br><span class="line">       autoindex_localtime on;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>除了可以共享文件，还可以自定义页面</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#自定义服务器页面</span><br><span class="line">location / &#123;</span><br><span class="line">		root /home/yuting;</span><br><span class="line">		index index.html index.htm;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>注意： 如果出现权限问题，可以修改目录的权限  </p>
+<h1 id="ssh密钥认证"><a href="#ssh密钥认证" class="headerlink" title="ssh密钥认证"></a>ssh密钥认证</h1><p>1.在主机和从机上执行：<code>ssh-keygen</code></p>
+<p>2.在从机上执行:  <code>scp  id_rsa.pub  root@主机地址:~/.ssh/master.pub</code><br>(上面这条指令是将从机上的 id_rsa.pub文件拷贝传递给到主机的.ssh文件夹下，并且命名为’master.pub’)</p>
+<p>3.在主机中的.ssh文件夹中创建authorized_keys文件： <code>touch authorized_keys</code> </p>
+<p>4.修改文件authorized_keys的权限: <code>chmod 600  authorized_keys</code>  </p>
+<p>5.将master.pub放进authorized_keys文件中:  <code>cat master.pub &gt;&gt;  authorized_keys</code></p>
+<p>6.在操作主机的时候，需要主机能够自己免密访问自己就将自己的公钥放在自己的authorized_keys文件中</p>
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/2/23/Linux常用指令/" itemprop="url">
-              
-                <span itemprop="name">Linux常用指令</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-02-23T14:37:14+08:00" content="2019-02-23">
-          02-23
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/2/23/git常用指令/" itemprop="url">
-              
-                <span itemprop="name">git常用指令</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-02-23T14:09:33+08:00" content="2019-02-23">
-          02-23
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+    
+    
+    
+	
+		<div>
+  
+    <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+  
+		</div>
+	
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Linux/" rel="tag"><i class="fa fa-tag"></i> Linux</a>
+          
+            <a href="/tags/Nginx/" rel="tag"><i class="fa fa-tag"></i> Nginx</a>
+          
+            <a href="/tags/服务器安装/" rel="tag"><i class="fa fa-tag"></i> 服务器安装</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/2/23/MySQL安装和配置/" rel="next" title="MySQL安装和配置">
+                <i class="fa fa-chevron-left"></i> MySQL安装和配置
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/2/23/vim编辑器/" rel="prev" title="vim编辑器">
+                vim编辑器 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+<span class="jiathis_txt">分享到：</span>
+<a class="jiathis_button_fav">收藏夹</a>
+<a class="jiathis_button_copy">复制网址</a>
+<a class="jiathis_button_email">邮件</a>
+<a class="jiathis_button_weixin">微信</a>
+<a class="jiathis_button_qzone">QQ空间</a>
+<a class="jiathis_button_tqq">腾讯微博</a>
+<a class="jiathis_button_douban">豆瓣</a>
+<a class="jiathis_button_share">一键分享</a>
+
+<a href="http://www.jiathis.com/share?uid=2140465" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript">
+var jiathis_config={
+  data_track_clickback:true,
+  summary:"",
+  shortUrl:false,
+  hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+      
+    </div>
+  </div>
 
 
           </div>
@@ -499,6 +587,15 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80MjgwMS8xOTM0OA=="></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -520,8 +617,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -606,6 +712,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Nginx服务器"><span class="nav-number">1.</span> <span class="nav-text">Nginx服务器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-阿里云添加80端口"><span class="nav-number">1.0.1.</span> <span class="nav-text">1.阿里云添加80端口</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-安装nginx"><span class="nav-number">1.0.2.</span> <span class="nav-text">2. 安装nginx</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-nginx目录共享配置"><span class="nav-number">1.0.3.</span> <span class="nav-text">3.nginx目录共享配置</span></a></li></ol></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#ssh密钥认证"><span class="nav-number">2.</span> <span class="nav-text">ssh密钥认证</span></a></li></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -777,6 +899,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -805,6 +931,17 @@
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 

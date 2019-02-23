@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>星龙断月的博客</title>
+  
+  
+  <link href="/atom.xml/rss2.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-02-23T09:00:12.355Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>星龙断月</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vim编辑器</title>
+    <link href="http://yoursite.com/2019/2/23/vim%E7%BC%96%E8%BE%91%E5%99%A8/"/>
+    <id>http://yoursite.com/2019/2/23/vim编辑器/</id>
+    <published>2019-02-23T08:51:34.000Z</published>
+    <updated>2019-02-23T09:00:12.355Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://yoursite.com/categories/Linux/"/>
+    
+      <category term="vim" scheme="http://yoursite.com/categories/Linux/vim/"/>
+    
+    
+      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
+    
+      <category term="vim编辑" scheme="http://yoursite.com/tags/vim%E7%BC%96%E8%BE%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Nginx服务器安装</title>
+    <link href="http://yoursite.com/2019/2/23/Nginx%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E8%A3%85/"/>
+    <id>http://yoursite.com/2019/2/23/Nginx服务器安装/</id>
+    <published>2019-02-23T08:21:02.000Z</published>
+    <updated>2019-02-23T08:26:16.494Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://yoursite.com/categories/Linux/"/>
+    
+      <category term="Nginx" scheme="http://yoursite.com/categories/Linux/Nginx/"/>
+    
+    
+      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
+    
+      <category term="Nginx" scheme="http://yoursite.com/tags/Nginx/"/>
+    
+      <category term="服务器安装" scheme="http://yoursite.com/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E8%A3%85/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MySQL安装和配置</title>
+    <link href="http://yoursite.com/2019/2/23/MySQL%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/"/>
+    <id>http://yoursite.com/2019/2/23/MySQL安装和配置/</id>
+    <published>2019-02-23T07:24:19.000Z</published>
+    <updated>2019-02-23T07:28:03.830Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+      <category term="MySQL" scheme="http://yoursite.com/categories/MySQL/"/>
+    
+    
+      <category term="MySQL" scheme="http://yoursite.com/tags/MySQL/"/>
+    
+      <category term="MySQL安装和配置" scheme="http://yoursite.com/tags/MySQL%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux常用指令</title>
+    <link href="http://yoursite.com/2019/2/23/Linux%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/"/>
+    <id>http://yoursite.com/2019/2/23/Linux常用指令/</id>
+    <published>2019-02-23T06:37:14.000Z</published>
+    <updated>2019-02-23T06:43:29.263Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://yoursite.com/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
+    
+      <category term="Linux指令" scheme="http://yoursite.com/tags/Linux%E6%8C%87%E4%BB%A4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>git常用指令</title>
+    <link href="http://yoursite.com/2019/2/23/git%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/"/>
+    <id>http://yoursite.com/2019/2/23/git常用指令/</id>
+    <published>2019-02-23T06:09:33.000Z</published>
+    <updated>2019-02-23T06:21:26.242Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://yoursite.com/categories/Linux/"/>
+    
+      <category term="gihub" scheme="http://yoursite.com/categories/Linux/gihub/"/>
+    
+      <category term="git" scheme="http://yoursite.com/categories/Linux/gihub/git/"/>
+    
+    
+      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
+    
+      <category term="gihub" scheme="http://yoursite.com/tags/gihub/"/>
+    
+      <category term="git指令" scheme="http://yoursite.com/tags/git%E6%8C%87%E4%BB%A4/"/>
+    
+  </entry>
+  
+</feed>
